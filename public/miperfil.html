@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/miperfil.css" />
+    <link rel="icon" href="../assets/images/icon.png" />
+</head>
+
+<body>
+
+    <!-- Barra de avisos -->
+    <div class="barra-container">
+        <div class="barra-movimiento">
+            <div class="barra-contenido">
+                <span>📢 Recordatorio: La reunión de padres será el viernes 24 a las 5:00 p.m.</span>
+                <span>🎓 Inscripciones abiertas para el Taller de Liderazgo Juvenil</span>
+                <span>📅 Ya puedes confirmar asistencia al Festival de Talentos del 30 de mayo</span>
+                <span>📸 Sube las fotos del evento "Día de la Familia" antes del 25 de mayo</span>
+                <span>📬 Consulta los certificados disponibles desde tu panel de usuario</span>
+            </div>
+            <div class="barra-contenido">
+                <span>📢 Recordatorio: La reunión de padres será el viernes 24 a las 5:00 p.m.</span>
+                <span>🎓 Inscripciones abiertas para el Taller de Liderazgo Juvenil</span>
+                <span>📅 Ya puedes confirmar asistencia al Festival de Talentos del 30 de mayo</span>
+                <span>📸 Sube las fotos del evento "Día de la Familia" antes del 25 de mayo</span>
+                <span>📬 Consulta los certificados disponibles desde tu panel de usuario</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Encabezado -->
+    <header class="header header--dark">
+        <div class="header__container">
+            <h1 class="header__logo">Mi perfil 👤</h1>
+            <form class="search-bar" id="mainSearchForm" onsubmit="buscarEventos(event)">
+                <input type="text" id="mainSearchInput" placeholder="Buscar eventos, inscripciones..." aria-label="Buscar eventos">
+                <button type="submit">🔍</button>
+            </form>
+            <nav class="header__nav">
+                <ul class="nav__list" id="menuList">
+                    <li class="nav__item menu-hamburguesa">
+                        <a href="#" class="nav__link" id="hamburgerBtn">☰</a>
+                        <ul class="dropdown-menu" id="dropdownMenu" style="display:none;">
+                            <li><a href="calendarioeventos.html" class="nav__link">Calendario de eventos</a></li>
+                            <li><a href="misinscripciones.html" class="nav__link">Mis Inscripciones</a></li>
+                            <li><a href="historialeventos.html" class="nav__link">Historial de Eventos</a></li>
+                            <li><a href="proximoseventos.html" class="nav__link">Próximos Eventos</a></li>
+                            <li><a href="galeria.html" class="nav__link">Galería</a></li>
+                            <li><a href="certificados.html" class="nav__link">Certificados</a></li>
+                            <li><a href="#" class="nav__link" id="logoutBtn">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de carrusel -->
+    <section class="carousel-section">
+        <div class="carousel-container-no-js">
+            <div class="carousel-slide-no-js" id="autoCarousel">
+                <div class="carousel-item"><img src="../assets/images/CONCURSO 1.jpg" alt="Imagen 1" class="carousel-image">
+                </div>
+                <div class="carousel-item"><img src="../assets/images/desarrollo web.jpg" alt="Imagen 2" class="carousel-image">
+                </div>
+                <div class="carousel-item"><img src="../assets/images/Reunión 1.jpg" alt="Imagen 3" class="carousel-image">
+                </div>
+                <div class="carousel-item"><img src="../assets/images/competencia diseño.jpg" alt="Imagen 4" class="carousel-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Sección de tarjetas -->
+    <br>
+    <section>
+        <h2 class="title_myprofile">Eventos realizados</h2>
+        <div class="cards-container">
+
+            <div class="card">
+                <div class="face front">
+                    <img src="../assets/images/coloreandosueños1.jpg" alt="">
+                    <h3>Coloreando Sueños</h3>
+                </div>
+                <div class="face back">
+                    <h3>Coloreando Sueños</h3>
+                    <p>Los estudiantes realizarán una actividad de coloreado donde expresarán su creatividad y mejorarán su motricidad fina.</p>
+                    <p>15/06/25</p>
+                    <div class="link_card"><a href="../pages/coloreandosueños.htm">Detalles</a></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face front">
+                    <img src="../assets/images/nudosmajicos1.jpg" alt="">
+                    <h3>Nudos Mágicos</h3>
+                </div>
+                <div class="face back">
+                    <h3>Nudos Mágicos</h3>
+                    <p>Los participantes elaborarán pulseras con hilo y dijes, aprendiendo a hacer nudos decorativos. Al finalizar, compartirán el significado de sus creaciones con el grupo.
+                    </p>
+                    <p>07/06/25</p>
+                    <div class="link_card"><a href="../pages/nudosmajicos.html">Detalles</a></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face front">
+                    <img src="../assets/images/moldeandoemociones1.jpg" alt="">
+                    <h3>Moldeando Emociones</h3>
+                </div>
+                <div class="face back">
+                    <h3>Moldeando Emociones</h3>
+                    <p>Los participantes moldearon figuras con plastilina que representaban personas, lugares o momentos
+                        importantes en sus vidas.</p>
+                        <p>18/05/25</p>
+                    <div class="link_card"><a href="../pages/moldeandoemociones.html">Detalles</a></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face front">
+                    <img src="../assets/images/torneo futbol.jpg" alt="torneo_futbol">
+                    <h3>Torneo de futbol</h3>
+                </div>
+                <div class="face back">
+                    <h3>Torneo de futbol</h3>
+                    <p>Se realizará un torneo que contará con la participación de 16 equipos. Más de 500 espectadores disfrutarán de dos días de fútbol, acompañados de premiaciones especiales.
+                    </p>
+                    <p>23/06/25</p>
+                    <div class="link_card"><a href="../pages/torneofutbol.html">Detalles</a></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face front">
+                    <img src="../assets/images/Voleyball portada.jpg" alt="">
+                    <h3>Torneo de Volleyball</h3>
+                </div>
+                <div class="face back">
+                    <h3>Torneo de Volleyball</h3>
+                    <p>Torneo de tres días con 12 equipos barriales. Las 'Águilas Doradas' ganaron el campeonato 3-2 en la final. El evento atrajo 300 aficionados y promovió el deporte local.
+                    </p>
+                    <div class="link_card"><a href="../pages/torneovolleyball.html">Detalles</a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="infoSection" class="info-section" style="display:none;"></section>
+
+    
+
+    <!-- Sección de reseñas de eventos -->
+    <section>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="review-title">Coloreando Sueños</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">“Un evento maravilloso, los niños disfrutaron mucho y aprendieron a expresarse con colores.”</div>
+            </div>
+            <div class="review-card">
+                <div class="review-title">Nudos Mágicos</div>
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-text">“Muy entretenido y educativo, aunque me hubiera gustado más tiempo para practicar.”</div>
+            </div>
+            <div class="review-card">
+                <div class="review-title">Moldeando Emociones</div>
+                <div class="review-stars">★★★☆☆</div>
+                <div class="review-text">“Interesante y creativo, pero algunos materiales faltaron. Aun así, lo recomiendo.”</div>
+            </div>
+            <div class="review-card">
+                <div class="review-title">Torneo de Fútbol</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">“Gran organización y ambiente familiar. ¡Esperamos el próximo torneo!”</div>
+            </div>
+            <div class="review-card">
+                <div class="review-title">Torneo de Volleyball</div>
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-text">“Excelente competencia, aunque el clima no ayudó mucho. ¡Muy divertido!”</div>
+            </div>
+        </div>
+
+        <!-- Apartado para comentar y calificar -->
+        <section class="review-form-section">
+            <h3 class="review-form-title">Deja tu comentario y calificación</h3>
+            <form class="review-form" id="reviewForm">
+                <label for="reviewStars">Calificación:</label>
+                <div class="review-stars-input" id="reviewStars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <label for="reviewComment">Comentario:</label>
+                <textarea id="reviewComment" class="review-form-textarea" rows="3" maxlength="250" placeholder="Escribe tu opinión..." required></textarea>
+                <button type="submit" class="review-form-btn">Enviar</button>
+                <div id="reviewFormMsg" class="review-form-msg"></div>
+            </form>
+        </section>
+        <br>
+        <br>
+        
+
+        <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h2 class="footer__logo">Schoolmeet</h2>
+                <p class="footer__text">Ofrecemos una gestión de eventos innovadora para ayudar a gestionar lo que
+                    tengas en mente y destaques en el mercado actual.</p>
+            </div>
+
+            <div>
+                <div class="footer__social">
+                    <h3 class="footer__heading">Nuestras redes sociales</h3>
+                    <div class="footer__social-buttons" style="display:flex;gap:18px;align-items:center;">
+                        <a href="https://www.tiktok.com/" target="_blank" class="footer__social-btn" title="TikTok">
+                            <img src="../assets/images/icono_redessociales.png" alt="TikTok" style="width:32px;height:32px;object-fit:contain;">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-btn" title="Instagram">
+                            <img src="../assets/images/icono_instagram.png" alt="Instagram" style="width:32px;height:32px;object-fit:contain;">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-btn" title="Facebook">
+                            <img src="../assets/images/icono_facebook.png" alt="Facebook" style="width:32px;height:32px;object-fit:contain;">
+                        </a>
+                        <a href="https://wa.me/" target="_blank" class="footer__social-btn" title="WhatsApp">
+                            <img src="../assets/images/whatsapp_icon.png" alt="WhatsApp" style="width:32px;height:32px;object-fit:contain;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__contact">
+                <h3 class="footer__heading">Contacto</h3>
+                <address>
+                    <p>Calle Principal Avenida 14 #68-23</p>
+                    <p>Medellín, Colombia</p>
+                    <p>Email: soporte@schoolmeet.com</p>
+                    <p>Teléfono: 444 44 44</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Schoolmeet. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </section>
+<script src="../assets/script.js"></script>
+</body>
+
+</html>
