@@ -1,3 +1,13 @@
+/* Fotos del equipo */
+.team-member__image-placeholder img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #d46be7;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(212,107,231,0.15);
+  margin-bottom: 12px;
+}
 
 .about {
   padding: var(--spacing-xxl) 0;
@@ -38,6 +48,9 @@
 .about__image img {
   width: 90%;
   height: 90%;
+  border: 4px solid #d46be7;
+  border-radius: 16px;
+  margin: 12px;
   object-fit: contain;
   display: block;
 }
