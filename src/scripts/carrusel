@@ -1,0 +1,18 @@
+// src/scripts/carousel.js
+export function initCarousel() {
+  const carousel = document.getElementById('autoCarousel');
+  if (carousel) {
+    const items = carousel.querySelectorAll('.carousel-item');
+    let index = 0;
+
+    function autoScrollCarousel() {
+      index = (index + 1) % items.length;
+      carousel.scrollTo({
+        left: items[index].offsetLeft,
+        behavior: 'smooth'
+      });
+    }
+
+    setInterval(autoScrollCarousel, 4000);
+  }
+}
